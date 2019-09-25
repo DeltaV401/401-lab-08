@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose",
-    "test-watch": "jest --watchAll --verbose"
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
   },
   "jest": {
     "testEnvironment": "node"
