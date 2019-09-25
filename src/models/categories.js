@@ -15,12 +15,12 @@ class Categories {
     }
   }
 
-  create(record) {
+  post(record) {
     let newRecord = new Category(record);
     return newRecord.save();
   }
 
-  update(_id, changes) {
+  put(_id, changes) {
     return Category.findByIdAndUpdate(_id, changes, { new: true });
   }
 

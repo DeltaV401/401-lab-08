@@ -12,12 +12,12 @@ class Products {
     }
   }
 
-  create(record) {
+  post(record) {
     let newRecord = new Product(record);
     return newRecord.save();
   }
 
-  update(_id, changes) {
+  put(_id, changes) {
     return Product.findByIdAndUpdate(_id, changes, { new: true });
   }
 
