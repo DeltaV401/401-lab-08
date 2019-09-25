@@ -2,7 +2,7 @@
 
 const Products = require('../src/models/products');
 let products = new Products();
-const supergoose = require('./supergoose');
+require('./supergoose');
 
 describe('Products model', () => {
   it('can post() a new product', () => {

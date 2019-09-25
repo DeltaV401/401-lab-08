@@ -2,7 +2,7 @@
 
 const Categories = require('../src/models/categories');
 let categories = new Categories();
-const supergoose = require('./supergoose');
+require('./supergoose');
 
 describe('Categories model', () => {
   it('can post() a new category', () => {
