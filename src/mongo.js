@@ -1,9 +1,9 @@
 'use strict';
-​
+
 /** Class representing a generic mongo model. */
 class Model {
 ​
-  /**
+   /**
    * Model Constructor
    * @param schema {object} - mongo schema
    */

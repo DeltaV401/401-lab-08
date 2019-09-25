@@ -1,5 +1,5 @@
 'use strict';
-​
+
 const supergoose = require('./supergoose.js');
 const {server} = require(`../src/server`);
 const mockRequest = supergoose(server);
