@@ -1,16 +1,16 @@
 'use strict';
 
 const express = require('express');
-const app = express();
+const router = express.Router();
 
 const Categories = require('./models/categories.js');
 const categories = new Categories();
 
-app.get('/api/v1/categories', getCategories);
-app.post('/api/v1/categories', postCategories);
-app.get('/api/v1/categories/:id', getCategory);
-app.put('/api/v1/categories/:id', putCategories);
-app.delete('/api/v1/categories/:id', deleteCategories);
+router.get('/api/v1/categories', getCategories);
+router.post('/api/v1/categories', postCategories);
+router.get('/api/v1/categories/:id', getCategory);
+router.put('/api/v1/categories/:id', putCategories);
+router.delete('/api/v1/categories/:id', deleteCategories);
 
 function getCategories(request,response,next) {
   // expects an array of object to be returned from the model
